@@ -1,0 +1,5 @@
+> 09-10-2022
+Created revTranslate() that reverse translates amino acid sequence to rna sequence with string and codon usage table dictionary.
+Tested revTranslate() against https://www.bioinformatics.org/sms2/rev_trans.html and got the same output!
+
+> 
