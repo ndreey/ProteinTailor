@@ -1,5 +1,28 @@
-> 09-10-2022
+> 09-10-2022 20:03
 Created revTranslate() that reverse translates amino acid sequence to rna sequence with string and codon usage table dictionary.
 Tested revTranslate() against https://www.bioinformatics.org/sms2/rev_trans.html and got the same output!
 
-> 
+> 09-10-2022 20:03
+For the start the plan is to tailor for e_coli.
+I therefore used the "average" codon usage table from https://www.genscript.com/tools/codon-frequency-table as standard codon usage table.
+For the reason of comparing tailored vs raw.
+As there was no download option i had to copy paste and edit. 
+I only wanted the codons, aa and fraction. So i manually removed freq and number.
+In the end i had this
+  TTT
+  TTC
+  TTA
+  TTG	
+  F
+  F
+  L
+  L	
+  0.59
+  0.41
+  0.28
+  0.29	
+I then created a script (standardCUT.py) to create a dictionary in the same format as the python_codon_table package by Edinburgh-Genome-Foundry.
+dict{aminoacid:{codon:fraction,codon2;fraction}}
+I also added a standard codon usage table for yeast.
+
+>
