@@ -1,4 +1,5 @@
 # ProteinTailor
 Program that tailors protein for specific host species to optimize protein expression.
 
-![plot](./ProteinTailor/Flowchart1.png)
+![Alt text](./ProteinTailor/Flowchart1.png "Optional title")
+
