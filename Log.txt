@@ -2,7 +2,7 @@
 Created revTranslate() that reverse translates amino acid sequence to rna sequence with string and codon usage table dictionary.
 Tested revTranslate() against https://www.bioinformatics.org/sms2/rev_trans.html and got the same output!
 
-> 09-10-2022 20:03
+> 09-10-2022 23:45
 For the start the plan is to tailor for e_coli.
 I therefore used the "average" codon usage table from https://www.genscript.com/tools/codon-frequency-table as standard codon usage table.
 For the reason of comparing tailored vs raw.
