@@ -28,12 +28,4 @@ table = pct.get_codons_table("e_coli_316407", replace_U_by_T=False)
 print(revTranslate(aa,table))
 
 
-"""
-Some info regarding pct:
-Checks available tables.
-print("Available tables:", pct.available_codon_tables_names)
-
-"""
-
-
 
