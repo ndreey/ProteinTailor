@@ -34,7 +34,7 @@ Created transcribe() that transcribes cDNA to mRNA
 
 
 
-> 18-19-2022 11:54
+> 18-10-2022 11:54
 Created uniprot_seq() that retrieves the amino acid sequence from Uniprot.org.
 It extracts the sequence by requesting the fasta format as a string from uniprot's api.
 With a Uniprot accession id one can thus access both SwissProt reviewd or unreviewd sequences.
@@ -50,5 +50,11 @@ sp|Q9JK66-3|PRKN_RAT
 
 
 
-> 
+> 18-10-2022 13:02
+Updated on the revTranslate()
+Instead of downloading CUT from e_coli strain we use the standard CUT's that i created 09-10-2022.
+
+
+
+
 
