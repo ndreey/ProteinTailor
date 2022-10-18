@@ -2,6 +2,8 @@
 Created revTranslate() that reverse translates amino acid sequence to rna sequence with string and codon usage table dictionary.
 Tested revTranslate() against https://www.bioinformatics.org/sms2/rev_trans.html and got the same output!
 
+
+
 > 09-10-2022 23:45
 For the start the plan is to tailor for e_coli.
 I therefore used the "average" codon usage table from https://www.genscript.com/tools/codon-frequency-table as standard codon usage table.
@@ -25,4 +27,28 @@ I then created a script (standardCUT.py) to create a dictionary in the same form
 dict{aminoacid:{codon:fraction,codon2;fraction}}
 I also added a standard codon usage table for yeast.
 
->
+
+
+> 12-10-2022 09:37
+Created transcribe() that transcribes cDNA to mRNA
+
+
+
+> 18-19-2022 11:54
+Created uniprot_seq() that retrieves the amino acid sequence from Uniprot.org.
+It extracts the sequence by requesting the fasta format as a string from uniprot's api.
+With a Uniprot accession id one can thus access both SwissProt reviewd or unreviewd sequences.
+If one wants the isoform, one must thus enter which isoform of the accession by writing the specific number.
+
+Example: uniprot_seq("Q9JK66", isoform = 4)
+It will thus compile accession with isoform to Q9JK66-4 then search through the record.id of the fasta.
+sp|Q9JK66|PRKN_RAT
+sp|Q9JK66-5|PRKN_RAT
+sp|Q9JK66-6|PRKN_RAT
+sp|Q9JK66-4|PRKN_RAT    # Match! Will therefore return this amino acid sequence.
+sp|Q9JK66-3|PRKN_RAT
+
+
+
+> 
+
