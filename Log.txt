@@ -58,5 +58,10 @@ EXAMPLE: revTranslate(aa_seq, cut = 2) would reverse translate using standard ye
 
 
 
-
+> 18-10-2022 16:28
+Created the calc_cai() that calculates the codon adaption index (CAI) of sequence by extracting the f(i) and fmax(j) 
+from the codon usage table dictionary. 
+Tried comparing it but can not understand what format they want the CUT in. 
+However, when i use the example CUT at http://genomes.urv.es/CAIcal/.
+It does calculate my test seq to 0.75 and calc_cai() calculates it to 0.77. So it seems to be working!
 
