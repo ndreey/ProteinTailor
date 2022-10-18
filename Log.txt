@@ -52,7 +52,9 @@ sp|Q9JK66-3|PRKN_RAT
 
 > 18-10-2022 13:02
 Updated on the revTranslate()
-Instead of downloading CUT from e_coli strain we use the standard CUT's that i created 09-10-2022.
+Made the standard CUT's that i created 09-10-2022 available.
+The second argument (cut =) can be set as a own CUT dictionary, 1 to access standard e_coli or 2 to access standard yeast.
+EXAMPLE: revTranslate(aa_seq, cut = 2) would reverse translate using standard yeast CUT.
 
 
 
