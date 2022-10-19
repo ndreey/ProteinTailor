@@ -65,3 +65,33 @@ Tried comparing it but can not understand what format they want the CUT in.
 However, when i use the example CUT at http://genomes.urv.es/CAIcal/.
 It does calculate my test seq to 0.75 and calc_cai() calculates it to 0.77. So it seems to be working!
 
+
+
+> 19-10-2022 19:37
+In an effort to create the codon optimization function i noticed that my test sequenced (mRNA) used codons that e_coli did not use.
+I cant just skip that codon and leave it in the sequence, because e_coli wont have the complementary tRNA.
+Resulting in a faulty translation.
+I therefore need to overlook the whole input handeling of the program.
+
+IDEA:
+  User needs to also set taxID for organism input sequence came from.
+  That way i can translate it to aa seq and use the aa seq to recive the most optimal codon for that aa.
+
+The codon optimization function worked when input mRNA seq used codons that exist in the target host CUT.
+I therefore believe it is time for me to start using object oriented programming and creating a class.
+The fundamental functions are working pre tailor.
+The tailoring functions can be looked into after.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
