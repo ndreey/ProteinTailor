@@ -67,6 +67,17 @@ It does calculate my test seq to 0.75 and calc_cai() calculates it to 0.77. So i
 
 
 
+> 19-10-2022 12:00 
+Implemented some basic statistics functions such as nucleotide counter and GC content distribution.
+Nucleotide counter was easy but GC content distribution across sequence was trickier.
+Had to learn how to plot using matplotlib and Seaborn by creating dataframes with numpy and pandas.
+But i made it worked, however it needs to be tweaked.
+Tweaked in the sense that i need to start asking potential users of this program of what they want to see.
+What stats and such.
+Ohh, well. For now i have the basic function at least so will be easy to revise it later.
+
+
+
 > 19-10-2022 19:37
 In an effort to create the codon optimization function i noticed that my test sequenced (mRNA) used codons that e_coli did not use.
 I cant just skip that codon and leave it in the sequence, because e_coli wont have the complementary tRNA.
