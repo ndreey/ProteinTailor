@@ -95,9 +95,29 @@ The tailoring functions can be looked into after.
 
 
 
+> 23-10-2022 17:30
+I redid the codon optimization following the idea i mentioned before.
+So now, user needs the taxid for both organism where GOI was derived from as well as the host cell.
+I made it as a class.
+So for the moment.
+"""Codon optimises the sequence, if codon not existent in host CUT, then the aa from organism CUT will be used to extract the codon.
+        .seq        = seq
+        .ct_seq     = codon tailored seq
+        .missed     = number of missed codons
+        .na_codons  = set of missed codons
+
+        Args:
+            seq (str): mRNA seq
+            org_cut (dict): Organism codon usage table
+            host_cut (dict): Host codon usage table
 
 
-
+> 25-10-2022 23:19
+I have created the main UI for the widget using PyQt5.
+What is next is making it actionable.
+My idea at the moment is to have three python files. One for GUI (viewer), one for program (main) , one with functions and classes (module).
+So the viewer will execute main, where main can call functions from module.
+Exciting!
 
 
 
