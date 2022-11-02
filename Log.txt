@@ -120,6 +120,16 @@ So the viewer will execute main, where main can call functions from module.
 Exciting!
 
 
+> 31-10-2022
+Using only widget was a faulty move as i could not implement the "File" or "Help" tabs.
+I want the file tab to be able to open fasta files so multiple sequences can be added.
+Thus, i used QT Designer to create an application.
+The main UI application is now built.
+My idea now is that the when you press the "Tailor" button, you will either get a PDF or a HTML file
+with plots and statistics. Maybe sequence allignment as well but dont know how computational that will be...
+More thoughts have to be put into this.
+The goal now is to make the buttons actionable. Rather, the input from GUI will be parameters for the Tailor program.
+We will see....
 
 
 
