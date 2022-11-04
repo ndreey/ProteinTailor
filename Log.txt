@@ -133,6 +133,15 @@ We will see....
 
 
 
+> 04-10-2022 14:03
+After some tutorials and struggles in regards how to connect the GUI with the ProteinTailor program it is finally live!
+At the moment it is able to give outputs to the terminal by asserting the parameters in the GUI.
+Next step now is to finalize the ProteinTailor program by implementing the harmonizing step.
+As well as figure out the output format.
+I also still have in my scope to have user be able to upload fasta/txt files as well as download the output in same format.
+
+
+
 
 
 
