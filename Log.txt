@@ -175,6 +175,25 @@ sense_nonsense() finds (senses) the stop codons that are in the normal reading f
 make_sense() just straight up removes the stop codon causing a nonsense mutation. it splits the sequence (seq u ence), removes the stop codon (u) and adds the remaining sequences back (seqence).
 false_initiation() finds SD sites that are to close to start codons (range of 12nt). This is checked across all reading frames as we dont want to have ribosomes binding on different reading frames or in the middle of the coding region.
 shoeshine() removes SD sites that could cause false initiations by replacing one of the codons in the SD site with CGC, GAA or GGG depending on which reading frame.
+
+"""
+  R       R
+AGG     AGG
+
+EKQ      E     ADEGV
+XAG     GAG     GXX              11 look ahead
+
+AEGIKLPQRSTVW    G       G
+    XXA         GGA     GGX      
+
+posG GAA GXX XXX    
+so you switch GGA in +2 to GGG and GAG in +1 to GAA
+AGG -> CGU
+sq = "xxxAGGAGGxAGGAGGxxxxAGGAGGx"
+
+XAG
+ """ 
+
 shoe_shoeshined() checks that the shoeshine did not implement a new sd site. So it check if the shoe is shoeshined.
 
 FinalFit then utilizes these functions and returns the final fitted tailored sequence!
