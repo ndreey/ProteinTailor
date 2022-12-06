@@ -202,7 +202,13 @@ shoe_shoeshined() checks that the shoeshine did not implement a new sd site. So 
 FinalFit then utilizes these functions and returns the final fitted tailored sequence!
 
 > 06-12-2022 10:25
+Need finalize output. I have decided to make it as a html report.
 
+- Tailored Sequence
+    - Copy All or maybe Download??
+- Statistics
+- Distribution Graph
+- Alignment
 
 
 
