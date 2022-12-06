@@ -176,6 +176,9 @@ make_sense() just straight up removes the stop codon causing a nonsense mutation
 false_initiation() finds SD sites that are to close to start codons (range of 12nt). This is checked across all reading frames as we dont want to have ribosomes binding on different reading frames or in the middle of the coding region.
 shoeshine() removes SD sites that could cause false initiations by replacing one of the codons in the SD site with CGC, GAA or GGG depending on which reading frame.
 
+""" Start codons are OK in the gene as long as they are not near a SD (8-10nt).
+    Stop codons are not OK, they will terminate."""
+
 """
   R       R
 AGG     AGG
