@@ -133,12 +133,53 @@ We will see....
 
 
 
-> 04-10-2022 14:03
+> 04-11-2022 14:03
 After some tutorials and struggles in regards how to connect the GUI with the ProteinTailor program it is finally live!
 At the moment it is able to give outputs to the terminal by asserting the parameters in the GUI.
 Next step now is to finalize the ProteinTailor program by implementing the harmonizing step.
 As well as figure out the output format.
 I also still have in my scope to have user be able to upload fasta/txt files as well as download the output in same format.
+
+
+> 30-11-2022 09:00
+November became a boiling point of activities and deadlines, thus this project fell to the side.
+As i was out of town i did changes that i did not log, so here is my effort trying to summarize what happend between the 4th and now.
+
+I noticed that the CodonTailor and FinalFit classes would end up using same functions. So instead of repeating code i split CodonTailors built in functions into their own functions.
+
+list_codons() splits the sequence into a ordered list where each element is the codon. AUGGGA becomes [AUG,GGA].
+
+codon_run(): takes the list of codons, the host and organism CUT and returns a list holding alot of good information + codon optimizes the sequence.
+
+
+    Args:
+        codons (list): Ordered list of codons
+        hcut (dict): host codon usage table dictionary
+        ocut (dict): organism codon usage table dictionary
+
+    Returns:
+        list: List with optimised sequence, number of codons that did not exist in host, list of noped codons, number of codons tailored,
+        List of lists holding each codons f(i) and f(j).  
+
+So here we aquire the codon optimized sequence and statistics in regards to how poorly the raw sequence was for the host organism.
+We also get the means to calculate the CAI using what i call the freq_list, example: [['codon', f(i), f(j)], ['AUU', 0.36, 0.73]]. 
+
+calc_cai() which did what list_codon and codon_run did was thus scrapped and created into caizen(). Caizen only calculates the CAI by using the freq_list.
+
+These functions are then used in the class CodonTailor, which orchestrates the optimization using the functions mentioned.
+
+For the FinalFit class it checks that the codon optimization does not add any stop codons into reading fram as well as false initiations.
+rouge_start_stops() returns the start index of start and stop codons of sequence.
+shine_dalgarno() locates all the shine dalgarno sites in sequence.
+sense_nonsense() finds (senses) the stop codons that are in the normal reading frame. These are important as they otherwise cause nonsense mutations.
+make_sense() just straight up removes the stop codon causing a nonsense mutation. it splits the sequence (seq u ence), removes the stop codon (u) and adds the remaining sequences back (seqence).
+false_initiation() finds SD sites that are to close to start codons (range of 12nt). This is checked across all reading frames as we dont want to have ribosomes binding on different reading frames or in the middle of the coding region.
+shoeshine() removes SD sites that could cause false initiations by replacing one of the codons in the SD site with CGC, GAA or GGG depending on which reading frame.
+shoe_shoeshined() checks that the shoeshine did not implement a new sd site. So it check if the shoe is shoeshined.
+
+FinalFit then utilizes these functions and returns the final fitted tailored sequence!
+
+> 06-12-2022 10:25
 
 
 
