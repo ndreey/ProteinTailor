@@ -210,7 +210,26 @@ Need finalize output. I have decided to make it as a html report.
 - Distribution Graph
 - Alignment
 
+> 07-12-2022 10:25
 
+# Frame
+sq = "123AGGAGG123123"                              # 123 AGG AGG 123 123
+print(sq[:3+0])                                     # 123
+print(sq[3+0+3:])                                   #         AGG 123 123
+print(sq[:3+0] + "CGC" + sq[3+0+3:])                # 123 CGC AGG 123 123
+print()
+# +1
+sq = "1231AGGAGG23123"                              # 123 1AG GAG G23 123
+print(sq[:4+1])                                     # 123 1A
+print(sq[4+1+3:])                                   #           G G23 123
+print(sq[:4+1] + "GAA" + sq[4+1+3:])                # 123 1AG AAG G23 123
+print()
+# +2
+sq = "12312AGGAGG3123"                              # 123 12A GGA GG3 123
+print(sq[:5+2])                                     # 123 12A G
+print(sq[5+2+3:])                                   #              G3 123
+print(sq[:5+2] + "GGG" + sq[5+2+3:])                # 123 12A GGG GG3 123
+print()
 
 
 
