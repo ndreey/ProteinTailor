@@ -1,5 +1,5 @@
 
-![Overview](Flowchart1.png "Optional title")
+![Overview](ProteinTailor_title.png "Optional title")
 
 # ProteinTailor
 
