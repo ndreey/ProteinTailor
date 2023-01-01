@@ -50,8 +50,8 @@ The report will state the **Job Title** and provide the **Tailored Sequence**. I
 
 
 ## How it works
-ProteinTailor tailors the sequence through five steps.
+ProteinTailor tailors the sequence through four steps.
 1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the [python_codon_tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables) package.
-2. 
-
-
+2. **Codon Tailor**: Codon Optimizes the sequence by choosing the most frequent codon from the host CUT. If the organism codon does not exist in the host CUT, it then checks which aa that codon coded for using the organism CUT and maps the aa to the host CUT and picks most frequent codon. Statistics such as raw CAI and unviable codons are stored.
+3. **Final Fitting**: Checks so no false initations or nonsense mutations have been implemented by the **Codon Tailor** process. This is done by locating the rouge start and stop codons. False initiations are removed by disrupting Shine-Dalgarno sites that are 6-12bp downstream of start codons. Stop codons in the reading frame are defined as a nonsense mutation and will be stripped from the sequence. Frame shifted stop codons are ignored.
+4. **Protein Pickup**: Presents the tailored sequence, "mirror check", statistics and plots using a HTML template and opens a web browser tab to make it possible to interact with the report.
