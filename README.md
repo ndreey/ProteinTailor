@@ -3,7 +3,7 @@
 
 # ProteinTailor
 
-Program that tailors exogenous proteins to make them viable and optimised for increased expression in _Escherichia coli_.
+Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
 
 ## Installation
 
