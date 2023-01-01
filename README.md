@@ -6,7 +6,7 @@ Program that tailors exogenous proteins to make them viable and optimised for ex
 
 ## How it works
 ProteinTailor tailors the sequence through five steps.
-1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the [python_codon_tables](https://www.google.com](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables) package.
+1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the [python_codon_tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables) package.
 2. 
 
 ## Installation
