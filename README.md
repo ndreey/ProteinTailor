@@ -39,8 +39,12 @@ To install the project, follow these steps:
   - protein_tailor_bg.png: Background image for the ProteinTailor HTML report. 
   - protein_tailor_icon.png: Icon image for the GUI.
 
-## Running the program <img src="protein_tailor_gui.png" align="right"/>
-text afasf asf asfa fasfafghhghg 
-agsag g sg ggasgs 
-agsgsag asgg
+## User Manual <img src="protein_tailor_gui.png" align="right"/>
+After main.py has been executed the ProteinTailor GUI will appear. With the drop down menu one can select the input format.
+- cDNA
+- mRNA
+- amino acid sequence (aa-seq)
+- Uniprot accesion
+ProteinTailor can handle inputs in either FASTA format or pure sequence. Note that this version can only handle one input at a time.
+
 
