@@ -41,4 +41,4 @@ To install the project, follow these steps:
 
 ## Running the program
 
-To run the program, use the following command:
+![Overview](protein_tailor_gui.png "Optional title")
