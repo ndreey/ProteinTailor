@@ -1,6 +1,8 @@
 
 ![Overview](ProteinTailor_title.png "Optional title")
 
+# Symphony <img src="ProteinTailor_title_small.png" alt="logo" width="181" align="right"/>
+
 # ProteinTailor 
 
 Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
