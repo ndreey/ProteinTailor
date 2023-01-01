@@ -40,5 +40,7 @@ To install the project, follow these steps:
   - protein_tailor_icon.png: Icon image for the GUI.
 
 ## Running the program
-
+text afasf asf asfa fasfafghhghg 
+agsag g sg ggasgs 
+agsgsag asgg
 <img src="protein_tailor_gui.png" align="right"/>
