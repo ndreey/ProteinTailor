@@ -4,7 +4,10 @@
 Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
 
 
-
+## How it works
+ProteinTailor tailors the sequence through five steps.
+1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the [python_codon_tables]([https://www.google.com](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables)) package.
+2. 
 
 ## Installation
 
@@ -56,7 +59,4 @@ The report will state the **Job Title** and provide the **Tailored Sequence**. I
 #<img src="protein_tailor_report2.png" width=809 align="right"/>
 
 
-## How it works
-ProteinTailor tailors the sequence through five steps.
-1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the python_codon_tables `python_codon_tables <https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables>` 
-2. 
+
