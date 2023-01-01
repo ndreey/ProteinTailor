@@ -11,7 +11,7 @@ Program that tailors exogenous proteins to make them viable and optimised for ex
 To install the project, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/ndreey/ProteinTailor.git`
-2. Install the dependencies manually or use: `pip install -r requirements.txt`
+2. Install the dependencies manually or use: `pip install -r requirements.txt` (You must be in the working directory of protein_tailor)
 
 ## File Manifest of protein_tailor
 
