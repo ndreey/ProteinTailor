@@ -1,17 +1,15 @@
-# ProteinTailor
-Program that tailors protein for specific host species to optimize protein expression.
 
 ![Overview](Flowchart1.png "Optional title")
 
-# My Python Project
+# ProteinTailor
 
-This is a Python project that does something amazing.
+Program that tailors exogenous proteins to make them viable and optimised for increased expression in _Escherichia coli_.
 
 ## Installation
 
 To install the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/username/my-python-project.git`
+1. Clone the repository: `git clone [https://github.com/ndreey/ProteinTailor]`
 2. Install the dependencies: `pip install -r requirements.txt`
 
 ## File Manifest
