@@ -42,3 +42,4 @@ To install the project, follow these steps:
 ## Running the program
 
 ![Overview](protein_tailor_gui.png "Optional title")
+<img src="protein_tailor_gui.png" alt="logo" width="181" align="middle"/>
