@@ -1,0 +1,10 @@
+biopython==1.79
+matplotlib==3.6.2
+pandas==1.5.1
+PyQt5==5.15.7
+python_codon_tables==0.1.12
+requests==2.28.1
+seaborn==0.12.1
+
+
+
