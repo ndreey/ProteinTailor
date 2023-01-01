@@ -12,7 +12,7 @@ To install the project, follow these steps:
 1. Clone the repository: `git clone [https://github.com/ndreey/ProteinTailor/protein_tailor]`
 2. Install the dependencies: `pip install -r requirements.txt`
 
-## File Manifest
+## File Manifest of protein_tailor
 
 - main.py: the main program file
 - **gui/**: a directory containing the code for the graphical user interface (GUI)
