@@ -32,7 +32,7 @@ ProteinTailor tailors the sequence through four steps.
 3. **Final Fitting**: Checks so no false initations or nonsense mutations have been implemented by the **Codon Tailor** process. This is done by locating the rouge start and stop codons. False initiations are removed by disrupting Shine-Dalgarno sites that are 6-12bp downstream of start codons. Stop codons in the reading frame are defined as a nonsense mutation and will be stripped from the sequence. Frame shifted stop codons are ignored.
 4. **Protein Pickup**: Presents the tailored sequence, "mirror check", statistics and plots using a HTML template and opens a web browser tab to make it possible to interact with the report.
 
-## File Manifest of protein_tailor
+## File Manifest of protein_tailor/
 
 - main.py: the main program file
 - **gui/**: a directory containing the code for the graphical user interface (GUI)
