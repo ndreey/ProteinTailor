@@ -35,10 +35,10 @@ ProteinTailor tailors the sequence through four steps.
 ## File Manifest of protein_tailor/
 
 - main.py: the main program file
-- [**gui/**]: a directory containing the code for the graphical user interface (GUI)
+- [gui/]: a directory containing the code for the graphical user interface (GUI)
   - __init__.py: An empty file used to mark the gui directory as a Python package.
   - gui.py: The code for the GUI.
-- [**program/**]: a directory containing the protein_tailor.py module which orchestrates the protein tailor program.
+- [program/]: a directory containing the protein_tailor.py module which orchestrates the protein tailor program.
   - __init__.py: An empty file used to mark the gui directory as a Python package
   - protein_tailor.py: Code for the ProteinTailor class that utilizes the tailor_tools.
 - **tailor_tools/**: A directory containing the code for the tailor tools used by ProteinTailor.
