@@ -51,6 +51,6 @@ ProteinTailor is able to process inputs in either **FASTA** format or as a pure 
 
 The report will state the **Job Title** and provide the **Tailored Sequence**. In the **Mirror Check** the raw sequence and tailored sequence are compared (NOT ALIGNED). The **Statistics Table** will hold the Codon Adaptation Index (CAI), GC-content, length of sequence, number of unviable codons and number of codons that were tailored. Further, two plots will be displayed showing the GC-distribution (across 150bp) of the raw and tailored sequence.
 
-As seen below
+**Example**:
 <img src="protein_tailor_report1.png" align="right"/>
 <img src="protein_tailor_report2.png" width=809 align="right"/>
