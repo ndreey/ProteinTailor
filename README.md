@@ -1,7 +1,7 @@
 
 ![Overview](ProteinTailor_title.png "Optional title")
 
-# ProteinTailor
+# ProteinTailor 🧬
 
 Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
 
