@@ -48,8 +48,8 @@ After main.py has been executed the ProteinTailor GUI will appear. With the drop
 
 ProteinTailor is able to process inputs in either **FASTA** format or as a pure sequence, though it is important to note that this version is limited to handling a single input at a time. The NCBI taxonomy IDs for both the organism from which the protein originates and the _E. coli_ strain must be entered in order to utilize ProteinTailor. It is recommended to provide a unique job title for each tailor session, as the ProteinTailor report will be overwritten for each new session. The "Tailor" button initiates the tailoring process, after which the ProteinTailor HTML report will be automatically opened in a new tab of your web browser. The HTML report can be saved from this location. ProteinTailor allows for the creation of additional tailor processes by modifying the input and pressing "Tailor" again.
 
-<img src="protein_tailor_report1.png" align="right"/>
-The report will state the **Job Title** and provide the **Tailored Sequence**. In the **Mirror Check** the raw sequence and tailored sequence are compared (NOT ALIGNED). 
+
+The report will state the **Job Title** and provide the **Tailored Sequence**. In the **Mirror Check** the raw sequence and tailored sequence are compared (NOT ALIGNED). <img src="protein_tailor_report1.png" align="right"/>
 
 
 
