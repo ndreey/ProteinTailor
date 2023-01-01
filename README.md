@@ -1,5 +1,5 @@
 
-# ProteinTailor <img src="proteintailor_readme.png" alt="logo" width="181" align="right"/>
+# ProteinTailor <img src="ProteinTailor_title.png" alt="logo" width="181" align="right"/>
 
 Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
 
