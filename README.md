@@ -54,3 +54,9 @@ The report will state the **Job Title** and provide the **Tailored Sequence**. I
 **Example**:
 <img src="protein_tailor_report1.png" align="right"/>
 <img src="protein_tailor_report2.png" width=809 align="right"/>
+
+
+## How it works
+ProteinTailor tailors the sequence through five steps.
+1. **Input**: If Uniprot accession is given then the aa-seq is downloaded by accessing the Uniprot API. For all input types, the unfitted sequences are converted to mRNA. The codon usage tables (CUTs) for each taxid is stored using the python_codon_tables `python_codon_tables <https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables>` 
+2. 
