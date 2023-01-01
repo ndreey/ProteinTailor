@@ -45,6 +45,7 @@ After main.py has been executed the ProteinTailor GUI will appear. With the drop
 - mRNA
 - amino acid sequence (aa-seq)
 - Uniprot accesion
-ProteinTailor can handle inputs in either FASTA format or pure sequence. Note that this version can only handle one input at a time.
+
+ProteinTailor can handle inputs in either FASTA format or pure sequence. Note that this version can only handle one input at a time. You are required to enter the NCBI taxid of the organism the protein is derived from and the taxid of the _E. coli_ strain for ProteinTailor to work. It is recommended to add a unique job title for each tailor session as the ProteinTailor Report will be overwritten. By pressing the **Tailor** button ProteinTailor will start the tailor procedure. The ProteinTailor HTML Report will be automatically presented in your webbrowser in a new tab. Here you can store the ProteinTailor HTML Report by saving the HTML file. ProteinTailor is dynamic so you can create a new tailor process by changing the input and press tailor again.
 
 
