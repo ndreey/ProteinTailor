@@ -39,8 +39,8 @@ To install the project, follow these steps:
   - protein_tailor_bg.png: Background image for the ProteinTailor HTML report. 
   - protein_tailor_icon.png: Icon image for the GUI.
 
-## Running the program
+## Running the program <img src="protein_tailor_gui.png" align="right"/>
 text afasf asf asfa fasfafghhghg 
 agsag g sg ggasgs 
 agsgsag asgg
-<img src="protein_tailor_gui.png" align="right"/>
+
