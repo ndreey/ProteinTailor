@@ -17,8 +17,8 @@ class ProteinTailor():
     The class then outputs the tailored sequences with additional 
     information in a HTML report file.
     """
-    def __init__(self, input_type, user_input, 
-                 org_taxid, host_taxid, job_title):
+    def __init__(self, input_type, user_input, org_taxid, host_taxid, 
+                 job_title):
         """
         Initialize the ProteinTailor class with parameters
 
