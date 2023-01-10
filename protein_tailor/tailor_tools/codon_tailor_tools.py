@@ -8,12 +8,10 @@ def codon_optimize(codons,org_cut, host_cut):
     from the host CUT. If the organism codon does not exist in the host
     CUT, it then checks which aa that codon coded for and maps the aa 
     to the host CUT and picks most frequent codon.
-
     Args:
         codons (list): ordered list of codons
         host_cut (dict): host codon usage table dictionary
         org_cut (dict): organism codon usage table dictionary
-
     Returns:
         list: List with optimised sequence, number of codons that did 
         not exist in host, number of codons optimised and list of lists 
@@ -75,7 +73,6 @@ def codon_optimize(codons,org_cut, host_cut):
     return [optimized_seq, na_codons, tailored, codon_freq] 
 
 
-
 class CodonTailor:   
         
     def __init__(self, seq, org_cut, host_cut):
@@ -95,12 +92,18 @@ class CodonTailor:
         # Splits string into codons.
         codons = list_codons(seq)
         
+        
         # If the sequence is comprised of only codons we continue.
         if len(codons)*3 == len(seq):            
             results = codon_optimize(codons, org_cut, host_cut)           
             raw_cai = caizen(results[3])            
-        
+        else:
+            print("Not comprimised of only codons")
+            print("seq / 3 = %s" % (len(seq)/3))
+            
+            
         self.raw_cai = raw_cai       
         self.ct_seq = results[0]       # Codon optimised sequence
         self.na_codons = results[1]    # number n/a codons
         self.tailored = results[2]     # number of codons optimised 
+        print("Length of ct_seq: %s" % len(results[0]))
