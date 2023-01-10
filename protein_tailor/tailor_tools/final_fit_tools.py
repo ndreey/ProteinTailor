@@ -41,7 +41,7 @@ def sense_nonsense(rogues):
     for rogue in rogues:        
         # If in reading frame then rogue/3 = integer.
         # If frameshifted, then rogue/3 = float.
-        # By using modulo, i can tell if q is a int or a float.  
+        # By using modulo, i can tell if q is an int or a float.  
         q = rogue%3
         if q == 0:
             nonsense.append(rogue)        
