@@ -1,8 +1,8 @@
-import re
+mport re
 
 # Functions and classes for the final fit procedure.
 
-def rouge_start_stops(seq,codon_type):
+def rogue_start_stops(seq,codon_type):
     """Locates the start index for start or stop codons in sequence
 
     Args:
@@ -15,36 +15,36 @@ def rouge_start_stops(seq,codon_type):
     # Start and Stop codons for E_coli
     start_stop_codons = {"start": ["AUG", "GUG", "UUG"], 
                          "stop": ["UAA", "UGA", "UAG"]}
-    rouges = []    
+    rogues = []    
     for ss_codon in start_stop_codons[codon_type]:
         # Returns index of codon
         ss_match = re.finditer(ss_codon,seq)
         # Extends the list with the elements in the match
-        rouge_ss = [match.start() for match in ss_match]
-        rouges.extend(rouge_ss)
+        rogue_ss = [match.start() for match in ss_match]
+        rogues.extend(rogue_ss)
     
-    return rouges
+    return rogues
 
 
-def sense_nonsense(rouges):
+def sense_nonsense(rogues):
     """Extracts the start positions of the stop codons that are in the
     reading frame as they can cause nonsense mutations.
 
     Args:
-        rouges (dict): Start positions of start and stop codons
+        rogues (dict): Start positions of start and stop codons
 
     Returns:
         list: start positions of stop codons causing nonsense.
     """    
     nonsense = []
     # For each stop codon, check if it is in the reading frame
-    for rouge in rouges:        
-        # If in reading frame then rouge/3 = integer.
-        # If frameshifted, then rouge/3 = float.
+    for rogue in rogues:        
+        # If in reading frame then rogue/3 = integer.
+        # If frameshifted, then rogue/3 = float.
         # By using modulo, i can tell if q is a int or a float.  
-        q = rouge%3
+        q = rogue%3
         if q == 0:
-            nonsense.append(rouge)        
+            nonsense.append(rogue)        
         # Frameshifted stop codons dont affect protein of interest.      
         else:
             pass
@@ -143,13 +143,13 @@ def shine_dalgarno(seq):
 
 
 
-def false_initiation(sd_site, rouges):
+def false_initiation(sd_site, rogues):
     """Finds SD sites that are to close to start codons that are in
     risk of causing a false initiation of translation.
 
     Args:
         sd_site (list): list of sd sites start index
-        rouges (list): positions of rouge start codons
+        rogues (list): positions of rogue start codons
 
     Returns:
         list: list of SD positions that are to close to a start codon
@@ -157,7 +157,7 @@ def false_initiation(sd_site, rouges):
     false_inits = []
     # Check to see if each start is 6-12 nt downstram from each sd site
     for sd in sd_site:                
-        for pos in rouges:
+        for pos in rogues:
             # If sd site is (12 or 6) nt downstream of start codon.
             if -6 >= sd-pos >= -12:
                 # Add to false initiation
@@ -186,7 +186,7 @@ def shoeshiner(seq):
     dirty = True
     while dirty == True:
         # Find Start codons
-        start_codons = rouge_start_stops(seq,"start")
+        start_codons = rogue_start_stops(seq,"start")
         print("There are %s start codons" % len(start_codons))
         # Find SD sites
         sd_sites = shine_dalgarno(seq)
@@ -214,15 +214,15 @@ class FinalFit:
     def __init__(self, seq):
         
         try:            
-            # Locate start positions of rouge stop codons
-            self.rouge_stops = rouge_start_stops(seq, "stop")
-            print("Stop codons: %s" % len(self.rouge_stops))
+            # Locate start positions of rogue stop codons
+            self.rogue_stops = rogue_start_stops(seq, "stop")
+            print("Stop codons: %s" % len(self.rogue_stops))
         except:
-            print("ERROR@ FinalFit rouge.stops")
+            print("ERROR@ FinalFit rogue.stops")
         
         try:
             # Start positions of stop codons that must be removed.
-            self.nonsense = sense_nonsense(self.rouge_stops)            
+            self.nonsense = sense_nonsense(self.rogue_stops)            
         except:
             print("ERROR@ FinalFit nonsense")
             
