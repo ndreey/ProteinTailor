@@ -9,10 +9,30 @@ from tailor_tools.statistics_tools import *
 # Class that orchestrates the tailoring steps.
 
 class ProteinTailor():
-    """Runs the ProteinTailor program
+    """
+    The `ProteinTailor` class provides a tool for codon optimization of 
+    a given mRNA or cDNA sequence for a specified host organism. 
+    It handles user inputs, gets the codon usage tables (CUTs), then 
+    optimizes the sequence and provide statistics of the optimization.
+    The class then outputs the tailored sequences with additional 
+    information in a HTML report file.
     """
     def __init__(self, input_type, user_input, 
                  org_taxid, host_taxid, job_title):
+        """
+        Initialize the ProteinTailor class with parameters
+
+        Args:
+            input_type (str): type of input, options are 'cDNA', 'mRNA',
+            'aa-seq', 'Uniprot'
+            user_input (str): The user input, the sequence for 
+            processing
+            org_taxid (int): Taxonomy id of the organism the sequence 
+            originates from
+            host_taxid (int): Taxonomy id of the host organism the 
+            sequence is going to be expressed in
+            job_title (str): Title for the job
+        """
         
         # Cleans up input.        
         print("\nProteinTailor STARTED")
