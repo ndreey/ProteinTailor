@@ -17,14 +17,19 @@ def mirror_check(seq, tlrd, nonsense):
     # If nonsense mutations (stop codons) were removed then the length 
     # of the sequences will differ. To make the alignment more true, 
     # lets add "***" to indicate that stop codon was removed.
-    if len(nonsense) > 0:        
-        for pos in nonsense:
+    if len(nonsense) > 0:  
+        add = 0             
+        for pos in nonsense:            
             # We split the sequence at start pos, add *** then put 
             # sequence together.
-            tlrd = tlrd[:pos] + "***" + tlrd[pos:]
+            tlrd = tlrd[:pos+add] + "***" + tlrd[pos+add:]
+            add += 3            
     else:
+        print("Am i passing here?")
         pass
-        
+    
+    print("Length of tlrd adjusted for make_sense: %s" % len(tlrd))
+       
     # Opens file to write alignment.
     with open("temp/mirror.txt", "w") as f:        
         raw = ""          # The raw seqeunce line
@@ -145,7 +150,7 @@ def protein_pickup(title, raw_stats, tlrd_stats, tlrd_seq):
             <title>ProteinTailor</title>
         </head>
 
-        <body background={modify_path("resources", "dalle2.png")}>
+        <body background={modify_path("resources", "protein_tailor_bg.png")}>
             
             <h1>
                 <div style="font-family:tahoma; font-size: 26pt; font-weight: 600">ProteinTailor</div>       
