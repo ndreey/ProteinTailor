@@ -1,4 +1,4 @@
-mport re
+import re
 
 # Functions and classes for the final fit procedure.
 
