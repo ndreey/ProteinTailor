@@ -120,14 +120,14 @@ class ProteinTailor():
         
         # Creates the seqeuence alignment comparision
         mirror_check(self.raw_dna, self.tailored_dna, ff.nonsense)
-        print("Mirror is in place")
+        print("\nMirror is in place")
         
         # Creates the GC distribution graphs        
-        GC_content_dist(self.raw_dna,150, "raw")
-        GC_content_dist(self.tailored_dna,150, "tailored")
+        GC_content_dist(self.raw_dna, 80, "raw")
+        GC_content_dist(self.tailored_dna, 80, "tailored")
         print("Plots are drawn")
         
         # HTML output
         protein_pickup(self.title, raw_stats, tailored_stats, 
                        self.tailored_dna)
-        print("The Tailored Protein is ready for pickup!")
+        print("\nThe Tailored Protein is ready for pickup!")
