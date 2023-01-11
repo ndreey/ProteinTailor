@@ -10,6 +10,9 @@ To install the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ndreey/ProteinTailor.git`
 2. Install the dependencies manually or use: `pip install -r requirements.txt` (Note, _requirments.txt_ must be located in the working directory)
 
+Due note and be aware that ProteinTailor will run into some issues loading the ProteinTailor Report automatically as the path finder function was developed for, and in a Windows OS.
+
+
 ## User Manual <img src="docs/protein_tailor_gui.png" align="right"/>
 After main.py has been executed the ProteinTailor GUI will appear. With the drop down menu one can select the input format.
 - cDNA
@@ -31,6 +34,9 @@ ProteinTailor tailors the sequence through four steps.
 2. **Codon Tailor**: The sequence is codon optimized by selecting the most frequent codons from the host CUT. If the organism's codon does not exist in the host CUT, the aa is determined using the organism CUT. Then by mapping the aa to the host CUT the most frequent codon is chosen.
 3. **Final Fitting**: The sequence is checked for false initations and nonsense mutations introduced by the **Codon Tailor** step. This is done by locating the rouge start and stop codons. False initiations are removed by disrupting Shine-Dalgarno sites that are 6-12bp downstream of start codons. Stop codons in the reading frame are defined as a nonsense mutation and will be stripped from the sequence. Frame shifted stop codons are ignored.
 4. **Protein Pickup**: Presents the tailored sequence, "mirror check", statistics and plots using a HTML template and opens a web browser tab to make it possible to interact with the report.
+
+## Version 0.1.0
+The current version includes a functional GUI, but has only been tested for use with _E. coli_ or similar prokaryotes as the host on a Windows operating system. It is currently capable of utilizing the algorithm parameters of codon bias, false initiations, and nonsense mutations. Please note that ProteinTailor will be continually updated as the algorithm is developed and its performance is evaluated with different organisms, including eukaryotes.
 
 ## File Manifest of protein_tailor/
 
