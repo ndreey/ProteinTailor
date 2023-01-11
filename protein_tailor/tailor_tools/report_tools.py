@@ -25,7 +25,6 @@ def mirror_check(seq, tlrd, nonsense):
             tlrd = tlrd[:pos+add] + "***" + tlrd[pos+add:]
             add += 3            
     else:
-        print("Am i passing here?")
         pass
     
     print("Length of tlrd adjusted for make_sense: %s" % len(tlrd))
