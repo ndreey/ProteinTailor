@@ -1,0 +1,118 @@
+
+    <html>
+        <head>
+            <title>ProteinTailor</title>
+        </head>
+
+        <body background=C:/Users/andbo/snooken/protein_tailor/resources/protein_tailor_bg.png>
+            
+            <h1>
+                <div style="font-family:tahoma; font-size: 26pt; font-weight: 600">ProteinTailor</div>       
+                <div style="font-family:tahoma; font-size: 10pt; font-weight: 600">Job Title:   P42212_83333</div>
+            </h1>
+            
+            <h3 style="font-family: tahoma"> </h3>  
+                
+            <h3 style="font-family:tahoma">Tailored Sequence</h3>
+
+            <textarea rows="12" cols="97" style="font-size:12pt">ATGAGCAAAGGCGAAGAACTGTTTACCGGCGTGGTGCCGATTCTGGTGGAACTGGATGGCGATGTGAACGGCCATAAATTTAGCGTGAGCGGCGAAGGCGAAGGCGATGCGACCTATGGCAAACTGACCCTGAAATTTATTTGCACCACCGGCAAACTGCCGGTGCCGTGGCCGACCCTGGTGACCACCTTTAGCTATGGCGTGCAGTGCTTTAGCCGCTATCCGGATCATATGAAACAGCATGATTTTTTTAAAAGCGCGATGCCGGAAGGCTATGTGCAGGAACGCACCATTTTTTTTAAAGATGATGGCAACTATAAAACCCGCGCGGAAGTGAAATTTGAAGGCGATACCCTGGTGAACCGCATTGAACTGAAAGGCATTGATTTTAAAGAAGATGGCAACATTCTGGGCCATAAACTGGAATATAACTATAACAGCCATAACGTGTATATTATGGCGGATAAACAGAAAAACGGCATTAAAGTGAACTTTAAAATTCGCCATAACATTGAAGATGGCAGCGTGCAGCTGGCGGATCATTATCAGCAGAACACCCCGATTGGCGATGGCCCGGTGCTGCTGCCGGATAACCATTATCTGAGCACCCAGAGCGCGCTGAGCAAAGATCCGAACGAAAAACGCGATCATATGGTGCTGCTGGAATTTGTGACCGCGGCGGGCATTACCCATGGCATGGATGAACTGTATAAA</textarea>      
+
+            <h3 style="font-family: tahoma">
+            Mirror Check
+            </h3>
+
+            <textarea rows="30" cols="145" style="font-size:8pt">
+                
+raw		1	ATGTCAAAAG	GAGAAGAACT	TTTCACAGGA	GTCGTCCCTA	TTCTTGTCGA	ACTTGATGGA	GATGTCAACG	70
+			|||   ||||	| ||||||||	 || || || 	|| || || |	|||| || ||	||| ||||| 	||||| ||||
+tailored	1	ATGAGCAAAG	GCGAAGAACT	GTTTACCGGC	GTGGTGCCGA	TTCTGGTGGA	ACTGGATGGC	GATGTGAACG	70
+
+raw		71	GACACAAATT	CTCAGTCTCA	GGAGAAGGAG	AAGGAGATGC	TACATACGGA	AAACTTACAC	TTAAATTCAT	140
+			| || |||||	    ||    	|| ||||| |	|||| |||||	 || || || 	||||| || |	| ||||| ||
+tailored	71	GCCATAAATT	TAGCGTGAGC	GGCGAAGGCG	AAGGCGATGC	GACCTATGGC	AAACTGACCC	TGAAATTTAT	140
+
+raw		141	TTGCACAACA	GGAAAACTTC	CTGTCCCTTG	GCCTACACTT	GTCACAACAT	TCTCATACGG	AGTCCAATGC	210
+			|||||| || 	|| ||||| |	| || || ||	||| || || 	|| || || |	|    || ||	 || || |||
+tailored	141	TTGCACCACC	GGCAAACTGC	CGGTGCCGTG	GCCGACCCTG	GTGACCACCT	TTAGCTATGG	CGTGCAGTGC	210
+
+raw		211	TTCTCAAGAT	ACCCTGATCA	CATGAAACAA	CACGATTTCT	TCAAATCAGC	TATGCCTGAA	GGATACGTCC	280
+			||     | |	| || |||||	 |||||||| 	|| ||||| |	| |||   ||	 ||||| |||	|| || || |
+tailored	211	TTTAGCCGCT	ATCCGGATCA	TATGAAACAG	CATGATTTTT	TTAAAAGCGC	GATGCCGGAA	GGCTATGTGC	280
+
+raw		281	AAGAAAGAAC	AATTTTCTTC	AAAGATGATG	GAAACTACAA	AACAAGAGCT	GAAGTCAAAT	TCGAAGGAGA	350
+			| ||| | ||	 ||||| || 	||||||||||	| ||||| ||	|||  | || 	||||| ||||	| ||||| ||
+tailored	281	AGGAACGCAC	CATTTTTTTT	AAAGATGATG	GCAACTATAA	AACCCGCGCG	GAAGTGAAAT	TTGAAGGCGA	350
+
+raw		351	TACACTTGTC	AACAGAATTG	AACTTAAAGG	AATTGATTTC	AAAGAAGATG	GAAACATTCT	TGGACACAAA	420
+			||| || || 	||| | ||||	|||| |||||	 |||||||| 	||||||||||	| ||||||||	 || || |||
+tailored	351	TACCCTGGTG	AACCGCATTG	AACTGAAAGG	CATTGATTTT	AAAGAAGATG	GCAACATTCT	GGGCCATAAA	420
+
+raw		421	CTTGAATACA	ACTACAACTC	ACACAACGTC	TACATTATGG	CTGATAAACA	AAAAAACGGA	ATTAAAGTCA	490
+			|| ||||| |	|||| |||  	 || ||||| 	|| |||||||	| ||||||||	 |||||||| 	|||||||| |
+tailored	421	CTGGAATATA	ACTATAACAG	CCATAACGTG	TATATTATGG	CGGATAAACA	GAAAAACGGC	ATTAAAGTGA	490
+
+raw		491	ACTTCAAAAT	TAGACACAAC	ATTGAAGATG	GATCAGTCCA	ACTTGCTGAT	CACTACCAAC	AAAACACACC	560
+			|||| |||||	| | || |||	||||||||||	|    || ||	 || || |||	|| || || |	| ||||| ||
+tailored	491	ACTTTAAAAT	TCGCCATAAC	ATTGAAGATG	GCAGCGTGCA	GCTGGCGGAT	CATTATCAGC	AGAACACCCC	560
+
+raw		561	TATTGGAGAT	GGACCTGTCC	TTCTTCCTGA	TAACCACTAC	CTTTCAACAC	AATCAGCTCT	TTCAAAAGAT	630
+			 ||||| |||	|| || || |	| || || ||	|||||| || 	||    || |	|    || ||	    ||||||
+tailored	561	GATTGGCGAT	GGCCCGGTGC	TGCTGCCGGA	TAACCATTAT	CTGAGCACCC	AGAGCGCGCT	GAGCAAAGAT	630
+
+raw		631	CCTAACGAAA	AAAGAGATCA	CATGGTCCTT	CTTGAATTCG	TCACAGCTGC	TGGAATTACA	CACGGAATGG	700
+			|| |||||||	|| | |||||	 ||||| || 	|| ||||| |	| || || ||	 || ||||| 	|| || ||||
+tailored	631	CCGAACGAAA	AACGCGATCA	TATGGTGCTG	CTGGAATTTG	TGACCGCGGC	GGGCATTACC	CATGGCATGG	700
+
+raw		701	ATGAACTTTA	CAAA	714
+			||||||| ||	 |||
+tailored	701	ATGAACTGTA	TAAA	714
+
+
+            </textarea>    
+
+            <h3 style="font-family: tahoma">           
+            </h3>    
+
+            <table>        
+                <tr bgcolor="lightgrey">
+                    <th style="font-family: tahoma; font-size: 15pt" width="294">Statistics</th>
+                    <th style="font-family: tahoma; font-size: 15pt" width="294">Raw</th>
+                    <th style="font-family: tahoma; font-size: 15pt" width="294">Tailored</th>
+                </tr>
+
+                <tr bgcolor="white" align="center">
+                    <td style="font-family: tahoma; font-weight: 600; font-size: 12pt">CAI</td>
+                    <td style="font-family: tahoma; font-size: 12pt">0.535</td>
+                    <td style="font-family: tahoma; font-size: 12pt">1.0</td>            
+                </tr>
+
+                <tr bgcolor="white" align="center">
+                    <td style="font-family: tahoma; font-weight: 600; font-size: 12pt">GC</td>
+                    <td style="font-family: tahoma; font-size: 12pt">0.387</td>
+                    <td style="font-family: tahoma; font-size: 12pt">0.486</td>            
+                </tr>
+
+                <tr bgcolor="white" align="center">
+                    <td style="font-family: tahoma; font-weight: 600; font-size: 12pt">Length</td>
+                    <td style="font-family: tahoma; font-size: 12pt">714</td>
+                    <td style="font-family: tahoma; font-size: 12pt">714</td>            
+                </tr>
+                
+                <tr bgcolor="white" align="center">
+                    <td style="font-family: tahoma; font-weight: 600; font-size: 12pt">Unviable Codons</td>
+                    <td colspan="2" style="font-family: tahoma; font-size: 12pt">0</td>
+                </tr>
+
+                <tr bgcolor="white" align="center">
+                    <td style="font-family: tahoma; font-weight: 600; font-size: 12pt">Tailored Codons</td>
+                    <td colspan="2" style="font-family: tahoma; font-size: 12pt">150</td>
+                </tr>                
+                        
+            </table>
+
+            <h3 style="font-family: tahoma">GC Distribution</h3>
+            <img src=C:/Users/andbo/snooken/protein_tailor/temp/raw_gc.png width = '460'>
+            <img src=C:/Users/andbo/snooken/protein_tailor/temp/tailored_gc.png width = '460'>
+        </body>
+    </html>
+    
