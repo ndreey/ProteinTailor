@@ -39,7 +39,9 @@ class ProteinTailor():
         print("Job Title: %s" % job_title)
         print("Processing inputs...")       
         input_info = strip_input(user_input)
-        taxids = taxid_check([org_taxid, host_taxid])        
+        print("...")
+        taxids = taxid_check([org_taxid, host_taxid])
+        print("...")        
         
         
         
