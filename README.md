@@ -1,7 +1,7 @@
 
 # ProteinTailor <img src="docs/ProteinTailor_title.png" alt="logo" width="181" align="right"/>
 
-Program that tailors exogenous proteins to make them viable and optimised for expression in _Escherichia coli_.
+SPECIES-SPECIFIC CODON OPTIMIZATION FOR INCREASED HETEROLOGOUS EXPRESSION
 
 ## Installation
 
