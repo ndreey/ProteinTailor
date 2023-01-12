@@ -1,7 +1,8 @@
 
 # ProteinTailor <img src="docs/ProteinTailor_title.png" alt="logo" width="181" align="right"/>
 
-SPECIES-SPECIFIC CODON OPTIMIZATION FOR INCREASED HETEROLOGOUS EXPRESSION
+Species-specific codon optimization for increased heterologous protein expression
+
 
 ## Installation
 
