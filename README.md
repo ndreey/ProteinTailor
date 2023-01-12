@@ -1,7 +1,7 @@
 
 # ProteinTailor <img src="docs/ProteinTailor_title.png" alt="logo" width="181" align="right"/>
 
-Tailor made species-specific codon optimization for increased heterologous protein expression
+Tailor-made species-specific codon optimization for increased heterologous protein expression.
 
 
 ## Installation
@@ -11,20 +11,20 @@ To install the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ndreey/ProteinTailor.git`
 2. Install the dependencies manually or use: `pip install -r requirements.txt` (Note, _requirments.txt_ must be located in the working directory)
 
-MAC and Linux users, be aware that ProteinTailor will run into some issues loading the ProteinTailor Report automatically as the path finder function was developed for a Windows OS. Successful installation and run is confirmed in Windows 11.
+MAC and Linux users, be aware that ProteinTailor will run into issues loading the ProteinTailor Report automatically as the pathfinder function was developed for a Windows OS. Successful installation and run are confirmed in Windows 11.
 
 
 ## User Manual <img src="docs/protein_tailor_gui.png" align="right"/>
-After main.py has been executed the ProteinTailor GUI will appear. With the drop down menu one can select the input format.
+After main.py has been executed, the ProteinTailor GUI will appear. Input format can be selected with the drop-down menu.
 - cDNA
 - mRNA
 - amino acid sequence (aa-seq)
 - [Uniprot accession](https://www.uniprot.org/) 
 
-ProteinTailor is able to process inputs in either **FASTA** format or as a pure sequence, though it is important to note that this version is limited to handling a single input at a time. The NCBI taxonomic identifier (taxid) for both the organism from which the protein originates and the _E. coli_ strain must be entered in order to utilize ProteinTailor. It is recommended to provide a unique job title for each tailor run, as the ProteinTailor Report will be automatically opened in a new tab of your web browser. Each run overwrites the previous files in the temp/ directory (.HTML, .png), but is still accessible as long as the web browser tab is open. The HTML report and plots can be saved from the tab by right clicking and pressing "Save as" or "Save image as". This allows for a streamlined approach where multiple reports can be generated each session.
+ProteinTailor can process inputs in either **FASTA** format or as a pure sequence, though it is important to note that this version is limited to handling a single input at a time. The NCBI taxonomic identifiers (taxid) for the organism from which the protein originates and the _E. coli_ strain must be entered to run ProteinTailor. It is recommended to provide a unique job title for each tailor run, as the ProteinTailor Report will be automatically opened in a new web browser tab. Each run overwrites the previous files in the temp/ directory (.HTML, .png) but is still accessible as long as the web browser tab is open. The HTML report and plots can be saved from the tab by right-clicking and pressing "Save as" or "Save image as". This allows for a streamlined approach where multiple reports can be generated each session.
 
 
-The report will state the **Job Title** and provide the **Tailored Sequence**. In the **Mirror Check** the raw sequence and tailored sequence are compared (NOT ALIGNED). The **Statistics Table** will hold the Codon Adaptation Index (CAI), GC-content, length of sequence, number of unviable codons and number of codons that were tailored. Further, two plots will be displayed showing the GC-distribution (across 150bp) of the raw and tailored sequence.
+The report will state the **Job Title** and provide the **Tailored Sequence**. In the **Mirror Check**, the raw sequence and tailored sequence are compared (NOT ALIGNED). The **Statistics Table** will hold the Codon Adaptation Index (CAI), GC-content, sequence length, number of unviable codons, and number of codons that were tailored. Further, two plots will be displayed showing the GC-distribution (across 150bp) of the raw and tailored sequence.
 
 [ProteinTailor Report Example](https://rawcdn.githack.com/ndreey/ProteinTailor/c4516952e0cfa06ca02b79a62602e87014fb0fba/docs/ProteinTailor_Report.html)
 
