@@ -11,7 +11,7 @@ To install the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ndreey/ProteinTailor.git`
 2. Install the dependencies manually or use: `pip install -r requirements.txt` (Note, _requirments.txt_ must be located in the working directory)
 
-Successful installation and run is confirmed in Windows 11. MAC and Linux users, be aware that ProteinTailor will run into some issues loading the ProteinTailor Report automatically as the path finder function was developed for a Windows OS.
+MAC and Linux users, be aware that ProteinTailor will run into some issues loading the ProteinTailor Report automatically as the path finder function was developed for a Windows OS. Successful installation and run is confirmed in Windows 11.
 
 
 ## User Manual <img src="docs/protein_tailor_gui.png" align="right"/>
