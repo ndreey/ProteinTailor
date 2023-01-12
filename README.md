@@ -32,12 +32,12 @@ The report will state the **Job Title** and provide the **Tailored Sequence**. I
 ## How it works
 ProteinTailor tailors the sequence through four steps.
 1. **Input**: If a Uniprot accession is provided, the amino acid sequence is retrieved using the Uniprot API. Regardless of the input type, the input sequences are converted to mRNA. The [python_codon_tables](https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/tree/master/python_codon_tables) package is used to store the codon usage tables (CUTs) from the CUT database [kazusa.or.jp](https://www.kazusa.or.jp/codon/) for each taxid.
-2. **Codon Tailor**: The sequence is codon optimized by selecting the most frequent codons from the host CUT. If the organism's codon does not exist in the host CUT, the aa is determined using the organism CUT. Then by mapping the aa to the host CUT the most frequent codon is chosen.
-3. **Final Fitting**: The sequence is checked for false initations and nonsense mutations introduced by the **Codon Tailor** step. This is done by locating the rouge start and stop codons. False initiations are removed by disrupting Shine-Dalgarno sites that are 6-12bp downstream of start codons. Stop codons in the reading frame are defined as a nonsense mutation and will be stripped from the sequence. Frame shifted stop codons are ignored.
-4. **Protein Pickup**: Presents the tailored sequence, "mirror check", statistics and plots using a HTML template and opens a web browser tab to make it possible to interact with the report.
+2. **Codon Tailor**: The sequence is codon optimized by selecting the most frequent codons from the host CUT. If the organism's codon does not exist in the host CUT, the aa is determined using the organism CUT. Then by mapping the aa to the host CUT, the most frequent codon is chosen.
+3. **Final Fitting**: The sequence is checked for false initiations and nonsense mutations introduced by the **Codon Tailor** step. This is done by locating the rogue start and stop codons. False initiations are removed by disrupting Shine-Dalgarno sites that are 6-12bp downstream of start codons. Stop codons in the reading frame are defined as nonsense mutations and will be stripped from the sequence. Frameshifted stop codons are ignored.
+4. **Protein Pickup**: Presents the tailored sequence, "mirror check", statistics table, and plots using an HTML template and opens a web browser tab to make it possible to interact with the report.
 
 ## Version 0.1.0
-The current version includes a functional GUI, but has only been tested for use with _E. coli_ or similar prokaryotes as the host on a Windows operating system. It is currently capable of utilizing the algorithm parameters of codon bias, false initiations, and nonsense mutations. Please note that ProteinTailor will be continually updated as the algorithm is developed and its performance is evaluated with different organisms, including eukaryotes.
+The current version includes a functional GUI but has only been tested for use with _E. coli_ or similar prokaryotes as the host on a Windows operating system. It is currently capable of utilizing the algorithm parameters of codon bias, false initiations, and nonsense mutations. Please note that ProteinTailor will be continually updated as the algorithm is developed and its performance is evaluated with different organisms, including eukaryotes.
 
 ## File Manifest of protein_tailor/
 
@@ -57,7 +57,7 @@ The current version includes a functional GUI, but has only been tested for use 
   - sequence_tools.py: Code for the sequence tools.
   - statistics_tools.py: Code for the statistics tools.
 - **temp/**: A directory to store temporary files.
-  - mirror.txt: Visual comparision between raw and tailored sequence.
+  - mirror.txt: Visual comparison  between raw and tailored sequence.
   - ProteinTailor_Report.html: The HTML file presenting the ProteinTailor report.
   - raw_gc.png: Plot of the GC distribution across 150 bases of raw sequence.
   - tailored_gc.png: Plot of the GC distribution across 150 bases of tailored sequence.
