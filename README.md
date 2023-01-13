@@ -46,9 +46,9 @@ Importantly, the nucleic sequences can only be comprised of CODONS. This is the 
 Run this sequence, [X70508](https://www.ebi.ac.uk/ena/browser/view/X70508), to see the error message when sequence is not comprised of codons.
 
 To test that **ProteinTailor** works, test run it with these inputs.
-- UniProt accession: P01308 or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
-- _Homo sapien_ taxid: 9606
-- _E. coli K-12_ taxid: 83333
+- UniProt accession: **P01308** or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
+- _Homo sapiens_ taxid: **9606**
+- _E. coli K-12_ taxid: **83333**
 
 ## File Manifest of protein_tailor/
 
