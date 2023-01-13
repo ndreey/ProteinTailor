@@ -41,12 +41,12 @@ The current version includes a functional GUI but has only been tested for use w
 
 ## Troubleshooting 
 When running a ProteinTailor optimization there is a live terminal log to help you see where it gets stuck.
+As mentioned, MAC and Linux is inclined to form issues with opening and even creating the report.
 Importantly, the nucleic sequences can only be comprised of CODONS. This is the most common issue when running mRNA or cDNA sequences.
+Run this sequence, [X70508](https://www.ebi.ac.uk/ena/browser/view/X70508), to see the error message when sequence is not comprised of codons.
 
-Run this sequence, [X70508](https://www.ebi.ac.uk/ena/browser/view/X70508), to see the error message when sequence is not comprisided of codons.
-
-To test that ProteinTailor works, test run with these inputs.
-- UniProt accession: G1RL34  or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
+To test that **ProteinTailor** works, test run it with these inputs.
+- UniProt accession: P01308 or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
 - _Homo sapien_ taxid: 9606
 - _E. coli K-12_ taxid: 83333
 
