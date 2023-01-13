@@ -47,8 +47,8 @@ Run this sequence, [X70508](https://www.ebi.ac.uk/ena/browser/view/X70508), to s
 
 To test that ProteinTailor works, test run with these inputs.
 - UniProt accession: G1RL34  or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
-- __Homo sapien__ taxid: 9606
-- __E. coli K-12__ taxid: 83333
+- _Homo sapien_ taxid: 9606
+- _E. coli K-12_ taxid: 83333
 
 ## File Manifest of protein_tailor/
 
