@@ -39,6 +39,17 @@ ProteinTailor tailors the sequence through four steps.
 ## Version 0.1.0
 The current version includes a functional GUI but has only been tested for use with _E. coli_ or similar prokaryotes as the host on a Windows operating system. It is currently capable of utilizing the algorithm parameters of codon bias, false initiations, and nonsense mutations. Please note that ProteinTailor will be continually updated as the algorithm is developed and its performance is evaluated with different organisms, including eukaryotes.
 
+## Troubleshooting 
+When running a ProteinTailor optimization there is a live terminal log to help you see where it gets stuck.
+Importantly, the nucleic sequences can only be comprised of CODONS. This is the most common issue when running mRNA or cDNA sequences.
+
+Run this sequence, [X70508](https://www.ebi.ac.uk/ena/browser/view/X70508), to see the error message when sequence is not comprisided of codons.
+
+To test that ProteinTailor works, test run with these inputs.
+- UniProt accession: G1RL34  or cDNA sequence: [BC005255](https://www.ebi.ac.uk/ena/browser/view/BC005255)
+- __Homo sapien__ taxid: 9606
+- __E. coli K-12__ taxid: 83333
+
 ## File Manifest of protein_tailor/
 
 - main.py: the main program file
